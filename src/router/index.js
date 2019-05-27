@@ -147,7 +147,6 @@ export const constantRoutes = [
       }
     ]
   },
-
   {
     path: 'external-link',
     component: Layout,
@@ -155,6 +154,17 @@ export const constantRoutes = [
       {
         path: 'https://panjiachen.github.io/vue-element-admin-site/#/',
         meta: { title: 'External Link', icon: 'link' }
+      }
+    ]
+  },
+  {
+    path: '/iframe',
+    component: Layout,
+    children: [
+      {
+        path: 'iframe-1',
+        meta: { title: 'iframe界面1', icon: 'link' },
+        component: () => import('@/views/iframe')
       }
     ]
   },
